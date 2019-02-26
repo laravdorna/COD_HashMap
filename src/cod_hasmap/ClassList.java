@@ -7,22 +7,24 @@ package cod_hasmap;
 
 import java.util.ArrayList;
 
+
 /**
  *
  * @author lvazquezdorna
  */
-public class classList implements InterfaceList {
+public class ClassList implements InterfaceList {
     
-    private ArrayList<String> lista = new ArrayList<String>();
+    ArrayList<String> miLista = new ArrayList<String>();
     
     @Override
     public void putElement(String element) {
-        lista.add(element);
+        miLista.add(element);
     }
     
     @Override
     public void getElement(int index) {
-        lista.get(index);
+       miLista.get(index);
     }
+
     
 }

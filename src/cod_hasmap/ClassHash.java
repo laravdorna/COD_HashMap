@@ -11,17 +11,17 @@ import java.util.HashMap;
  *
  * @author lvazquezdorna
  */
-public class classHash implements InterfaceHash {
+public class ClassHash implements InterfaceHash {
 
-    public  HashMap<Integer, String> map = new HashMap<Integer, String>();
+    public  HashMap<Integer, String> miHashOriginal = new HashMap<Integer, String>();
 
     @Override
     public void putValue(Integer key, String value) {
-        map.put(key, value);
+        miHashOriginal.put(key, value);
     }
 
     @Override
     public String getValue(Integer key) {
-        return map.get(key);
+        return miHashOriginal.get(key);
     }
 }
